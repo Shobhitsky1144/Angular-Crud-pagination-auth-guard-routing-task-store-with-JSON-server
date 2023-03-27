@@ -1,0 +1,9 @@
+<div>
+    <header>
+        <ul>
+            <li><a routerLink="">Dashboard</a></li>
+            <li><a routerLink="add">Create</a></li>
+            <li (click)="logout()" class="logout-btn" *ngIf="isAuth" class="logout-btn">Logout</li>
+        </ul>
+    </header>
+</div>

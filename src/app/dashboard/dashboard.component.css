@@ -1,0 +1,35 @@
+.active{
+    background-color: aqua;
+    color: black;
+}
+.table-btn{
+    display: flex;
+  
+}
+.table-btn button{
+    width: 30%;
+    margin: 1rem;
+    border-radius: 20px;
+    background: aqua;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    font-family: auto;
+    font-size: 16px;
+}
+
+a{
+    text-decoration: none;
+    list-style: none;
+}
+.table-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page-btn{
+    width: 7%!important;
+    font-weight: bold;
+    color: brown;
+}

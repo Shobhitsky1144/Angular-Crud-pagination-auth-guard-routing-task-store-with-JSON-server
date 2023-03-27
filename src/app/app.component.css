@@ -1,0 +1,18 @@
+ul li{
+    display: block;
+}
+.color-group{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.color-group div{
+    height: 26px;
+    width: 43%;
+    border-radius: 23px;
+    padding: 0.3rem;
+    cursor: pointer;
+   
+    margin: 1rem;
+   
+}

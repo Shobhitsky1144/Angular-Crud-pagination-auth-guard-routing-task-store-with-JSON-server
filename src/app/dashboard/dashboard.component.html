@@ -1,0 +1,35 @@
+<div>
+    <h1>Todo Table</h1>
+    <table>
+        <thead>
+                <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Height</th>
+        <th>Weight</th>
+        <th>Type</th>
+         <th>Action</th>
+        </tr>
+        </thead>
+        <tr *ngFor="let todo of todoList">
+            <td>{{todo?.id}}</td>
+<td>{{todo?.fullName}}</td>
+<td>{{todo?.height}} cm</td>
+<td>{{todo?.weight}} kg</td>
+<td>{{todo?.type}}</td>
+<td style="display: flex;justify-content: center;"><div class="table-btn cursor-pointer" ><fa-icon [icon]="deleteIcon"  (click)="deleteTodo(todo.id)">Delete</fa-icon>
+     <a routerLink="edit/{{todo.id}}" style="margin-left: 10px;"><fa-icon [icon]="editIcon"></fa-icon></a></div></td>
+        </tr>
+
+    </table>
+    <div class="pagination table-btn">
+    <button class="page-btn" (click)="prev()" *ngIf="counter!==1"[disabled]="counter===1"><</button>
+    <ul *ngFor="let page of total">
+    
+      <li><a (click)="setCurrentPage(page)" [ngClass]="{active: page === counter}" class="cursor-pointer">  {{page}}</a></li>
+     
+    </ul>
+<button class="page-btn" *ngIf="counter!==totalPage"  (click)="next()"  [disabled]="counter===totalPage" >></button>
+     </div>
+    
+</div>

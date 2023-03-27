@@ -1,0 +1,10 @@
+<div>
+    <h1>Update Todo</h1>
+    <form [formGroup]="updateForm" (ngSubmit)="edit()">
+        <input type="text" name="fullName" formControlName="fullName" placeholder="Enter Name"><br/><br/>
+        <input type="text" name="height" formControlName="height" placeholder="Enter Height"><br/><br/>
+        <input type="text" name="weight" formControlName="weight" placeholder="Enter Weight"><br/><br/>
+        <input type="text" name="type" formControlName="type" placeholder="Enter Type"><br/><br/>
+        <button >Update</button>
+    </form>
+</div>
